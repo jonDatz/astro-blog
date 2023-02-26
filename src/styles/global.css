@@ -19,7 +19,6 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 400%;
-  background-position: 0%;
 }
 html {
   font-family: system-ui, sans-serif;
