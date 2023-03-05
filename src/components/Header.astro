@@ -3,13 +3,14 @@ import HeaderLink from "./HeaderLink.astro";
 ---
 
 <header>
-  <nav class="flex sm:justify-end space-x-6 subpixel-antialiased m-4 uppercase">
+  <nav class="flex m-4 space-x-6 subpixel-antialiased uppercase sm:justify-end">
     <HeaderLink href="/">Home</HeaderLink>
     <HeaderLink href="/about">About</HeaderLink>
     <HeaderLink href="/blog">Blog</HeaderLink>
     <HeaderLink href="https://github.com/jondatz" target="_blank">
       GitHub
     </HeaderLink>
+    <HeaderLink href="/components">Components</HeaderLink>
   </nav>
 </header>
 <style>

@@ -10,7 +10,7 @@ import "../styles/global.css";
       Blog by <span class="text-gradient">jonDatz.</span>
     </h1>
     <p
-      class="p-4 overflow-hidden text-gray-200 duration-500 rounded drop-shadow-2xl bg-slate-900/5 ring ring-slate-300/25"
+      class="p-4 overflow-hidden text-gray-200 duration-500 rounded drop-shadow-2xl bg-slate-50/5 ring ring-slate-300/25"
     >
       To get started, open the directory <code class="code-gradient bg-slate-50"
         >src/pages</code
@@ -18,8 +18,10 @@ import "../styles/global.css";
       <strong class="text-fuchsia-400">Code Challenge:</strong> Tweak the "Welcome
       to Astro" message above.
     </p>
-    <container>
-      <ul class="flex flex-row flex-wrap mt-4 gap-4">
+    <container class="justify-items-stretch sm:flex-grow">
+      <ul
+        class="flex flex-wrap items-stretch gap-4 mt-4 md:flex-row sm:flex-col sm:w-full md:justify-evenly"
+      >
         <Card
           href="/about"
           title="about."
