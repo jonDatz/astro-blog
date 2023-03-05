@@ -23,13 +23,6 @@ body {
 }
 html {
   font-family: system-ui, sans-serif;
-  background: linear-gradient(
-    45deg,
-    #3a3e70 10%,
-    #333661 30%,
-    #2b2d52 50%,
-    #10111f 80%
-  );
   background-size: cover;
 }
 code {
