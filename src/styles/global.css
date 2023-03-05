@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  margin: 0;
-  height: 100%;
-}
 .text-gradient {
   --accent: 124, 58, 237;
   --accent-gradient: linear-gradient(
@@ -21,9 +16,22 @@ body {
   -webkit-text-fill-color: transparent;
   background-size: 400%;
 }
-html {
-  background-size: cover;
+
+.code-gradient {
+  --accent: 124, 58, 237;
+  --accent-gradient: linear-gradient(
+    45deg,
+    rgb(var(--accent)),
+    #da62c4 30%,
+    white 60%
+  );
+  background-image: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400%;
 }
+
 code {
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
