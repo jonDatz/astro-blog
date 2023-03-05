@@ -12,7 +12,12 @@ import tailwind from "@astrojs/tailwind";
 import image from "@astrojs/image";
 
 // https://astro.build/config
+import vercel from "@astrojs/vercel/serverless";
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://datz-blog.vercel.app/",
-  integrations: [mdx(), sitemap(), react(), tailwind(), image()]
+  integrations: [mdx(), sitemap(), react(), tailwind(), image()],
+  output: "server",
+  adapter: vercel()
 });
